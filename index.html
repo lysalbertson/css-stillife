@@ -16,10 +16,15 @@
     width: 500px;
     height: 500px;
     border: 1px solid black;
+    background-color: #f0b7b1;
+    z-index:-20
+      
   }
 
+  
+  
+  
   .cup {
-    border: 2px solid black;
     height: 75px;
     width: 75px;
     position: relative;
@@ -31,7 +36,6 @@
     background-size: 100% 40%;
     background-repeat: repeat;
   }
-
   .cup-eye-left {
     height: 15px;
     width: 15px;
@@ -40,9 +44,8 @@
     position: relative;
     top: 10px;
     left: 15px;
-    background-image: radial-gradient(circle at 10px, #ffffff 10%, #000000 15%)
+    background-image: radial-gradient(circle at 10px, #ffffff 10%, #000000 15%);
   }
-
   .cup-eye-right {
     height: 15px;
     width: 15px;
@@ -53,8 +56,22 @@
     left: 40px;
     background-image: radial-gradient(circle at 10px, #ffffff 10%, #000000 15%)
   }
+  .cup-smile{
+    height: 9px;
+    width: 15px;
+    border: 4px solid black;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    border-top: 0px;
+    position: relative;
+    left: 27.5px;
+    top: 3px 
+  }
 
 
+  
+  
+  
   .bustello-front {
     height: 250px;
     width: 200px;
@@ -96,16 +113,20 @@
     height: 50px;
     width: 50px;
     position: relative;
-    bottom: 635px;
-    left: 300px;
+    bottom: 655px;
+    left: 310px;
+    border-radius: 10%
   }
-
   .cafe-lid {
     width: 200px;
     height: 30px;
     background-color: orange;
     border-top-left-radius: 30%;
-    border-top-right-radius: 30%
+    border-top-right-radius: 30%;
+    position: relative;
+    bottom: 660px;
+    left: 240px;
+    border-bottom: 2px solid rgb(255, 106, 0)
   }
 
   .cafetera {
@@ -116,18 +137,18 @@
     left: 240px;
     top: 100px;
     clip-path: polygon(20% 0%, 80% 0%, 100% 0, 90% 76%, 80% 100%, 20% 100%, 10% 76%, 0 0);
-    ;
+    background-image: linear-gradient(to left, #ffa500 51%, #ff6a00 51%, #ffa500 52%);
+    background-size: 25% 100%;
 
   }
 
-  .handle {
+ .handle {
     height: 200px;
     width: 30px;
     background-color: black;
     border-radius: 20%;
     position: relative;
-    left: 40%
-  }
+    left: 40% } 
 
   .cafe-bottom {
     background-color: gray;
@@ -145,7 +166,6 @@
   <div class="cafetera">
     <div class="handle"></div>
   </div>
-
   <div class="cafe-bottom"></div>
   <div class="bustello-front"></div>
   <div class="bustello-lid"></div>
@@ -153,6 +173,7 @@
   <div class="cup">
     <div class="cup-eye-left"></div>
     <div class="cup-eye-right"></div>
+    <div class="cup-smile"></div>
   </div>
   <div class="cafe-top"></div>
   <div class="cafe-lid"></div>
