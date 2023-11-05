@@ -24,6 +24,15 @@
     src: url(Mali-ExtraLight.ttf);
     font-family: "cute"
   }
+     
+  @keyframes blink {
+     85% {
+    transform: rotateX(0deg);
+  }
+  90% {
+    transform: rotateX(90deg);
+  }
+}
 
   .cup {
     height: 75px;
@@ -47,6 +56,10 @@
     top: 10px;
     left: 15px;
     background-image: radial-gradient(circle at 10px, #ffffff 10%, #000000 15%);
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
+    
   }
 
   .cup-eye-right {
@@ -57,7 +70,10 @@
     position: relative;
     top: -5px;
     left: 40px;
-    background-image: radial-gradient(circle at 10px, #ffffff 10%, #000000 15%)
+    background-image: radial-gradient(circle at 10px, #ffffff 10%, #000000 15%);
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
   }
 
   .cup-smile {
@@ -105,6 +121,9 @@
     position: relative;
     top: 50px;
     background-image: radial-gradient(circle at 25px, #ffffff 15%, #000000 15%);
+    animation-name: blink;
+    animation-duration: 4s;
+    animation-iteration-count: infinite
   }
 
   .bustello-smile {
@@ -196,7 +215,7 @@
     border: 4px solid rgba(255, 255, 255, 0.79);
     position: absolute;
     left: 20px;
-    top:5px;
+    top: 5px;
     border-top-left-radius: 100%;
     border-bottom: 0px;
     border-right: 0px
@@ -254,7 +273,10 @@
     position: relative;
     top: 30px;
     left: 50px;
-    background-image: radial-gradient(circle at 9px 8px, #ffffff 20%, #000000 15%)
+    background-image: radial-gradient(circle at 9px 8px, #ffffff 20%, #000000 15%);
+    animation-name: blink;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite
   }
 
   .cafe-eye-right {
@@ -265,7 +287,10 @@
     position: relative;
     top: 5px;
     left: 100px;
-    background-image: radial-gradient(circle at 9px 8px, #ffffff 20%, #000000 15%)
+    background-image: radial-gradient(circle at 9px 8px, #ffffff 20%, #000000 15%);
+     animation-name: blink;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite
   }
 
   .cafe-smile {
