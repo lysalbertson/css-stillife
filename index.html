@@ -70,10 +70,6 @@
     top: 3px
   }
 
-
-
-
-
   .bustello-front {
     height: 250px;
     width: 200px;
@@ -83,7 +79,8 @@
     position: relative;
     left: 98px;
     bottom: 175px;
-    z-index: -1
+    z-index: -1;
+    background-image: linear-gradient(#ffff00 75%, #ff0f0f 52%)
   }
 
   .bustello-lid {
@@ -97,7 +94,47 @@
     z-index: -1;
     border: 1px solid orange
   }
-
+  .bustello-eye{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    top: 50px;
+    background-image: radial-gradient(circle at 25px, #ffffff 15%, #000000 15%);
+  }
+  .bustello-smile{
+    height: 15px;
+    width: 25px;
+    border: 4px solid black;
+    border-bottom-right-radius: 70%;
+    border-top: 0px;
+    border-left: 0px;
+    position: relative;
+    top: 80px
+  }
+  .bustello-barcode{
+    height: 85px;
+    width: 65px;
+    background-image: linear-gradient(#ffffff 53%, #000000 52%);
+    position: relative;
+    top: 110px;
+    left: 80px;
+    background-size: 100% 5%;
+    border: 6px solid white;
+    z-index: 45
+  }
+  .bustello-text{
+    border: red solid 2px;
+    font-size: 9px;
+    width: 90px;
+    height: 153px ;
+    position: relative;
+    bottom: 100px;
+    left:70px;
+    
+    
+  }
   .bustello-back {
     background-color: hsla(60, 100%, 76%, 1);
     height: 40px;
@@ -208,7 +245,15 @@
     <div class="cafe-eye-right"></div>
     <div class="cafe-smile"></div>
   </div>
-  <div class="bustello-front"></div>
+  <div class="bustello-front">
+  <div class="bustello-eye"></div>
+  <div class="bustello-smile"></div>
+  <div class="bustello-barcode"></div>
+  <div class="bustello-text">
+  <b> Gregorio Menendez Bustelo</b> (born June 21, 1894) traveled from his native Spain to Cuba as a young man, and moved to the United States in 1917. <br>
+  <b>He founded the Café Bustelo</b> coffee company in East Harlem, New York in 1928.
+    </div>
+  </div>
   <div class="bustello-lid"></div>
   <div class="bustello-back"></div>
   <div class="cup">
