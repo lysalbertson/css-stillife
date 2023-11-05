@@ -24,36 +24,33 @@
     src: url(Mali-ExtraLight.ttf);
     font-family: "cute"
   }
-     
+
   @keyframes blink {
-     85% {
-    transform: rotateX(0deg);
-  }
-  90% {
-    transform: rotateX(90deg);
-  }
-}
-/*   @keyframes talk {
-    0%{ transform: scaleY(1)
+    85% {
+      transform: rotateX(0deg);
     }
+
+    90% {
+      transform: rotateX(90deg);
+    }
+  }
+
+  @keyframes talk {
+    0% {
+      transform: scaleY(1)
+    }
+
     50% {
-    transform: scaleY(0)
+      transform: scaleY(0)
     }
-   100% {
-     transform: scaleY(1)}
-  } */
-/*   @keyframes pop {
-    0%{
-      transform: scale(1)
-    }
-    50%{
-       transform: scale(0)
-    }
+
     100% {
-      transform: scale(1)
+      transform: scaleY(1)
     }
   }
- */
+
+
+
 
   .cup {
     height: 75px;
@@ -80,7 +77,6 @@
     animation-name: blink;
     animation-duration: 5s;
     animation-iteration-count: infinite
-    
   }
 
   .cup-eye-right {
@@ -98,35 +94,34 @@
   }
 
   .cup-smile {
-     height: 10px;
+    height: 10px;
     width: 10px;
-   background-color: black;
+    background-color: black;
     position: relative;
     left: 27.5px;
     top: 3px;
-   border-bottom-left-radius: 70%;
+    border-bottom-left-radius: 70%;
     border-bottom-right-radius: 70%;
     animation-name: talk;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite
   }
-  .cup-bubble{
+
+  .cup-bubble {
     height: 80px;
     width: 100px;
-    background-color: #9d0fbf;
+    background-color: #9d0ff8;
     position: relative;
     bottom: 920px;
     left: 110px;
     border-radius: 50%;
+    border: 2px black solid;
     text-align: center;
     padding: 18px;
     font-family: "cute";
-    color: white;
-    animation-name: pop;
-    animation-duration: 2s;
-    animation-iteration-count: infinite
-    
+
   }
+
   .cup-bubble::after {
     content: "";
     height: 15px;
@@ -136,8 +131,10 @@
     top: 100px;
     right: 20px;
     border-radius: 50%;
+    border: 2px black solid;
   }
-   .cup-bubble::before {
+
+  .cup-bubble::before {
     content: "";
     height: 20px;
     width: 20px;
@@ -146,7 +143,9 @@
     top: 85px;
     right: 35px;
     border-radius: 50%;
+    border: 2px black solid;
   }
+
   .bustello-front {
     height: 250px;
     width: 200px;
@@ -169,7 +168,7 @@
     bottom: 442px;
     left: 98px;
     z-index: -1;
-    border: 1px solid orange
+    background-image: radial-gradient(ellipse, #ffff85 63%, #d0d011 55%)
   }
 
   .bustello-eye {
@@ -194,7 +193,7 @@
     position: relative;
     top: 80px;
     animation-name: talk;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite
   }
 
@@ -207,7 +206,8 @@
     left: 80px;
     background-size: 100% 5%;
     border: 6px solid white;
-    z-index: 45
+    z-index: 45;
+
   }
 
   .bustello-text {
@@ -221,7 +221,7 @@
     font-family: "cute";
     padding: 2px;
     background-image: linear-gradient(#ffff00 63%, #ff0f0f 64%, #ffff00 64%);
-    
+
   }
 
   .bustello-back {
@@ -232,11 +232,11 @@
     position: absolute;
     bottom: 350px;
     left: 165px;
-    border: 1px solid orange;
-    z-index: -2
+    z-index: -2;
+    background-image: radial-gradient(ellipse, #ffff85 63%, #d0d011 55%)
   }
-   
-  .bustelo-bubble{
+
+  .bustelo-bubble {
     height: 80px;
     width: 100px;
     background-color: #56937c;
@@ -247,11 +247,9 @@
     text-align: center;
     padding: 18px;
     font-family: "cute";
-    animation-name: pop;
-    animation-duration: 4s;
-    animation-iteration-count: infinite
-    
+    border: 2px black solid;
   }
+
   .bustelo-bubble::after {
     content: "";
     height: 15px;
@@ -261,8 +259,10 @@
     bottom: 100px;
     right: 20px;
     border-radius: 50%;
+    border: 2px black solid;
   }
-   .bustelo-bubble::before {
+
+  .bustelo-bubble::before {
     content: "";
     height: 20px;
     width: 20px;
@@ -271,6 +271,7 @@
     bottom: 85px;
     right: 35px;
     border-radius: 50%;
+    border: 2px black solid;
   }
 
   .cafe-top {
@@ -294,6 +295,7 @@
     left: 240px;
     border-bottom: 2px solid rgb(255, 106, 0)
   }
+
   .cafe-lid::after {
     content: "";
     height: 10px;
@@ -306,7 +308,7 @@
     border-bottom: 0px;
     border-left: 0px
   }
-  
+
   .cafe-lid::before {
     content: "";
     height: 5px;
@@ -351,6 +353,7 @@
     left: 240px;
     top: 100px;
   }
+
   .cafe-bottom::before {
     content: "";
     height: 15px;
@@ -388,7 +391,7 @@
     top: 5px;
     left: 100px;
     background-image: radial-gradient(circle at 9px 8px, #ffffff 20%, #000000 15%);
-     animation-name: blink;
+    animation-name: blink;
     animation-duration: 4.5s;
     animation-iteration-count: infinite
   }
@@ -403,10 +406,11 @@
     top: 9px;
     left: 75px;
     animation-name: talk;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite
   }
-  .cafe-bubble{
+
+  .cafe-bubble {
     height: 80px;
     width: 100px;
     background-color: #7fb3ff;
@@ -417,11 +421,10 @@
     text-align: center;
     padding: 18px;
     font-family: "cute";
-    animation-name: pop;
-    animation-duration: 2s;
-    animation-iteration-count: infinite
-    
+    z-index: 45;
+    border: 2px black solid;
   }
+
   .cafe-bubble::after {
     content: "";
     height: 15px;
@@ -431,8 +434,10 @@
     bottom: 100px;
     left: 20px;
     border-radius: 50%;
+    border: 2px black solid;
   }
-   .cafe-bubble::before {
+
+  .cafe-bubble::before {
     content: "";
     height: 20px;
     width: 20px;
@@ -441,6 +446,7 @@
     bottom: 85px;
     left: 35px;
     border-radius: 50%;
+    border: 2px black solid;
   }
 </style>
 
@@ -474,12 +480,12 @@
   <div class="cafe-top"></div>
   <div class="cafe-lid"></div>
   <div class="cafe-bubble">
-  <b>pour me!</b>
+    <b>pour me!</b>
   </div>
   <div class="bustelo-bubble">
- <b> brew me!</b>
+    <b> brew me!</b>
   </div>
   <div class="cup-bubble">
- <b> drink me!</b>
+    <b> drink me!</b>
   </div>
 </div>
