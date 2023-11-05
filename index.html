@@ -33,7 +33,7 @@
     transform: rotateX(90deg);
   }
 }
-  @keyframes talk {
+/*   @keyframes talk {
     0%{ transform: scaleY(1)
     }
     50% {
@@ -41,8 +41,8 @@
     }
    100% {
      transform: scaleY(1)}
-  }
-  @keyframes pop {
+  } */
+/*   @keyframes pop {
     0%{
       transform: scale(1)
     }
@@ -53,7 +53,7 @@
       transform: scale(1)
     }
   }
-
+ */
 
   .cup {
     height: 75px;
@@ -110,7 +110,43 @@
     animation-duration: 2s;
     animation-iteration-count: infinite
   }
-
+  .cup-bubble{
+    height: 80px;
+    width: 100px;
+    background-color: #9d0fbf;
+    position: relative;
+    bottom: 920px;
+    left: 110px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 18px;
+    font-family: "cute";
+    color: white;
+    animation-name: pop;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+    
+  }
+  .cup-bubble::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #a751bf;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    border-radius: 50%;
+  }
+   .cup-bubble::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #9d7ede;
+    position: absolute;
+    top: 85px;
+    right: 35px;
+    border-radius: 50%;
+  }
   .bustello-front {
     height: 250px;
     width: 200px;
@@ -197,6 +233,43 @@
     left: 165px;
     border: 1px solid orange;
     z-index: -2
+  }
+   
+  .bustelo-bubble{
+    height: 80px;
+    width: 100px;
+    background-color: #56937c;
+    position: relative;
+    bottom: 540px;
+    right: 0px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 18px;
+    font-family: "cute";
+    animation-name: pop;
+    animation-duration: 4s;
+    animation-iteration-count: infinite
+    
+  }
+  .bustelo-bubble::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #56ca5d;
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    border-radius: 50%;
+  }
+   .bustelo-bubble::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #56e785;
+    position: absolute;
+    bottom: 85px;
+    right: 35px;
+    border-radius: 50%;
   }
 
   .cafe-top {
@@ -329,7 +402,7 @@
     top: 9px;
     left: 75px;
     animation-name: talk;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: infinite
   }
   .cafe-bubble{
@@ -338,13 +411,13 @@
     background-color: #7fb3ff;
     position: relative;
     bottom: 360px;
-    left: 230px;
+    left: 330px;
     border-radius: 50%;
     text-align: center;
     padding: 18px;
     font-family: "cute";
     animation-name: pop;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite
     
   }
@@ -355,7 +428,7 @@
     background-color: #7fd1ff;
     position: absolute;
     bottom: 100px;
-    right: 20px;
+    left: 20px;
     border-radius: 50%;
   }
    .cafe-bubble::before {
@@ -365,7 +438,7 @@
     background-color: #51d5ff;
     position: absolute;
     bottom: 85px;
-    right: 35px;
+    left: 35px;
     border-radius: 50%;
   }
 </style>
@@ -403,9 +476,9 @@
   <b>pour me!</b>
   </div>
   <div class="bustelo-bubble">
-  Brew me!
+ <b> brew me!</b>
   </div>
   <div class="cup-bubble">
-  Drink me!
+ <b> drink me!</b>
   </div>
 </div>
