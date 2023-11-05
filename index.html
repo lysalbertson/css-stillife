@@ -15,7 +15,7 @@
     position: relative;
     width: 500px;
     height: 500px;
-    border: 1px solid black;
+    border: 1px solid #ea74ec;
     background-color: #FFC0E4;
     z-index: -20
   }
@@ -29,7 +29,6 @@
     85% {
       transform: rotateX(0deg);
     }
-
     90% {
       transform: rotateX(90deg);
     }
@@ -39,19 +38,13 @@
     0% {
       transform: scaleY(1)
     }
-
     50% {
       transform: scaleY(0)
     }
-
     100% {
       transform: scaleY(1)
     }
   }
-
-
-
-
   .cup {
     height: 75px;
     width: 75px;
@@ -146,7 +139,7 @@
     border: 2px black solid;
   }
 
-  .bustello-front {
+  .bustelo-front {
     height: 250px;
     width: 200px;
     background-color: yellow;
@@ -159,7 +152,7 @@
     background-image: linear-gradient(#ffff00 75%, #ff0f0f 52%)
   }
 
-  .bustello-lid {
+  .bustelo-lid {
     background-color: hsla(60, 100%, 76%, 1);
     height: 40px;
     width: 200px;
@@ -171,7 +164,7 @@
     background-image: radial-gradient(ellipse, #ffff85 63%, #d0d011 55%)
   }
 
-  .bustello-eye {
+  .bustelo-eye {
     height: 35px;
     width: 35px;
     border-radius: 50%;
@@ -184,7 +177,7 @@
     animation-iteration-count: infinite
   }
 
-  .bustello-smile {
+  .bustelo-smile {
     height: 20px;
     width: 20px;
     border-left: 0px;
@@ -197,7 +190,7 @@
     animation-iteration-count: infinite
   }
 
-  .bustello-barcode {
+  .bustelo-barcode {
     height: 85px;
     width: 65px;
     background-image: linear-gradient(#ffffff 53%, #000000 52%);
@@ -207,10 +200,9 @@
     background-size: 100% 5%;
     border: 6px solid white;
     z-index: 45;
-
   }
 
-  .bustello-text {
+  .bustelo-text {
     border: #ff0f0f solid 2px;
     font-size: 6.5px;
     width: 90px;
@@ -221,10 +213,9 @@
     font-family: "cute";
     padding: 2px;
     background-image: linear-gradient(#ffff00 63%, #ff0f0f 64%, #ffff00 64%);
-
   }
 
-  .bustello-back {
+  .bustelo-back {
     background-color: hsla(60, 100%, 76%, 1);
     height: 40px;
     width: 100px;
@@ -304,11 +295,11 @@
     position: absolute;
     left: 180px;
     top: 7px;
-    border-top-right-radius: 30%;
+    border-top-right-radius: 100%;
     border-bottom: 0px;
     border-left: 0px
   }
-
+/* ^ this is the glare ^ */
   .cafe-lid::before {
     content: "";
     height: 5px;
@@ -317,10 +308,11 @@
     position: absolute;
     left: 178px;
     top: 15px;
-    border-top-right-radius: 30%;
+    border-top-right-radius: 100%;
     border-bottom: 0px;
     border-left: 0px
   }
+  /* ^ this is the glare ^ */
 
   .cafetera {
     background-color: orange;
@@ -357,15 +349,13 @@
   .cafe-bottom::before {
     content: "";
     height: 15px;
-    width: 15px;
-    border: 4px solid rgba(255, 255, 255, 0.79);
+    width: 5px;
+    background-color: rgba(255, 255, 255, 0.79);
     position: absolute;
     left: 140px;
     top: 10px;
-    border-top-right-radius: 20%;
-    border-bottom: 0px;
-    border-left: 0px;
-    rotate: -8deg
+    rotate: -10deg;  
+    /* ^ this is the glare ^ */
   }
 
   .cafe-eye-left {
@@ -459,19 +449,19 @@
     <div class="cafe-eye-right"></div>
     <div class="cafe-smile"></div>
   </div>
-  <div class="bustello-front">
-    <div class="bustello-eye"></div>
-    <div class="bustello-smile"></div>
-    <div class="bustello-barcode"></div>
-    <div class="bustello-text">
+  <div class="bustelo-front">
+    <div class="bustelo-eye"></div>
+    <div class="bustelo-smile"></div>
+    <div class="bustelo-barcode"></div>
+    <div class="bustelo-text">
       <b> Gregorio Menendez Bustelo</b> (born June 21, 1894) traveled from his native Spain to Cuba as a young man, and moved to the United States in 1917. <br>
       <b>He founded the Café Bustelo</b> coffee company in East Harlem, New York in 1928.<br>
       <br>
       His product became popular among Cuban exiles
     </div>
   </div>
-  <div class="bustello-lid"></div>
-  <div class="bustello-back"></div>
+  <div class="bustelo-lid"></div>
+  <div class="bustelo-back"></div>
   <div class="cup">
     <div class="cup-eye-left"></div>
     <div class="cup-eye-right"></div>
